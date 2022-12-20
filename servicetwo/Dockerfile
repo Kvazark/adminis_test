@@ -2,10 +2,10 @@
 WORKDIR /app
 EXPOSE 80
 COPY *.csproj ./
-RUN dotnet restore "ServiceOne.csproj"
+RUN dotnet restore "servicetwo.csproj"
 COPY . ./
-RUN dotnet publish serviceone.csproj -c Release -o out
+RUN dotnet publish servicetwo.csproj -c Release -o out
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/out .
-ENTRYPOINT ["dotnet", "serviceone.dll"]
+ENTRYPOINT ["dotnet", "servicetwo.dll"]

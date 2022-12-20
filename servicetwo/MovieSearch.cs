@@ -1,6 +1,6 @@
 using System;
 
-namespace ServiceTwo{
+namespace servicetwo{
 
 public class MovieSearch
 {

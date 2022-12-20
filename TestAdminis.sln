@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceOne", "ServiceOne\ServiceOne.csproj", "{367EF85B-4F5A-4784-BE28-971861E98885}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "serviceone", "serviceone\serviceone.csproj", "{367EF85B-4F5A-4784-BE28-971861E98885}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceTwo", "ServiceTwo\ServiceTwo.csproj", "{4B4AD2DB-BD30-45D5-8A0F-507C42EEEBA9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "servicetwo", "servicetwo\servicetwo.csproj", "{4B4AD2DB-BD30-45D5-8A0F-507C42EEEBA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

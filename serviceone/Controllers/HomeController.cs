@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Net.Http.Headers; 
 using Microsoft.AspNetCore.Mvc;
 
-namespace serviceOne.Controllers
+namespace serviceone.Controllers
 {
 
 
