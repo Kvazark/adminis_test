@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Net.Http.Headers; 
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace serviceone.Controllers
 {
@@ -16,7 +17,9 @@ namespace serviceone.Controllers
         public HomeController()
         {
             _client = new HttpClient();
-            _client.BaseAddress = new Uri("http://servicetwo:80/");
+            var url =
+                new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("AppSettings")["url"];
+            _client.BaseAddress = new Uri("url");
             _client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
         }
