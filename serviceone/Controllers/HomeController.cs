@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Net.Http.Headers; 
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace serviceone.Controllers
 {
@@ -12,11 +13,13 @@ namespace serviceone.Controllers
     public class HomeController : ControllerBase
     {
         private HttpClient _client;
+        private IConfiguration _configuration;
 
-        public HomeController()
+        public HomeController(IConfiguration configuration)
         {
             _client = new HttpClient();
-            _client.BaseAddress = new Uri(Environment.GetEnvironmentVariable("uri_name") ?? string.Empty);
+            _configuration = configuration;
+            _client.BaseAddress = new Uri(_configuration.GetConnectionString("connectionString"));
             _client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
         }
