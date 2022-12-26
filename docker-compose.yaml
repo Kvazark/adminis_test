@@ -14,7 +14,7 @@ services:
       context: serviceone
       dockerfile: Dockerfile
     environment:
-      connection: "http://servicetwo:80/"
+      ConnectionStrings:movieservice: "http://servicetwo:80/"
     ports:      
       - "5050:80"
     networks:

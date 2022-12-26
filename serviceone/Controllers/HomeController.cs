@@ -19,7 +19,7 @@ namespace serviceone.Controllers
         {
             _client = new HttpClient();
             _configuration = configuration;
-            _client.BaseAddress = new Uri(_configuration.GetConnectionString("connectionString"));
+            _client.BaseAddress = new Uri(_configuration.GetConnectionString("movieservice"));
             _client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
         }
