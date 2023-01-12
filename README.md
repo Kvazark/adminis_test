@@ -1,5 +1,5 @@
 # adminis_test
-𝐝𝐨𝐜𝐤𝐞𝐫-𝐬𝐞𝐭𝐮𝐩.𝐬𝐡
+                                                            СОДЕРЖАНИЕ ФАЙЛА 𝐝𝐨𝐜𝐤𝐞𝐫-𝐬𝐞𝐭𝐮𝐩.𝐬𝐡
 #!/bin/bash
 
 echo "* Add hosts ..."
@@ -53,7 +53,7 @@ docker-compose up
 
 echo "* Add vagrant user to docker group ..."
 usermod -aG docker vagrant
-𝐕𝐚𝐠𝐫𝐚𝐧𝐭𝐟𝐢𝐥𝐞
+                                                                    СОДЕРЖАНИЕ ФАЙЛА 𝐕𝐚𝐠𝐫𝐚𝐧𝐭𝐟𝐢𝐥𝐞
 Vagrant.configure("2") do | config |
     config.vm.box = "ubuntu/jammy64"
     config.vm.boot_timeout = 600
